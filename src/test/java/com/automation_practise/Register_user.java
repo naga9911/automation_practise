@@ -1,17 +1,15 @@
 package com.automation_practise;
 
-import java.awt.AWTException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
 public class Register_user extends base_class{
 
 	@Test
-	private void stepexecute() throws InterruptedException, AWTException {
+	private void stepexecute() throws InterruptedException {
 		
 		driver.get("https://automationexercise.com/");
 		driver.manage().window().maximize();

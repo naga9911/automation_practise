@@ -1,7 +1,7 @@
 package com.automation_practise;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -11,14 +11,12 @@ WebDriver driver;
 	@BeforeClass
 	public void browser() {
 		 
-		 //ChromeOptions options = new ChromeOptions();
-		// options.addArguments("--disable-save-password-bubble");
-		 driver = new ChromeDriver();
+		 driver = new FirefoxDriver();
 	}
 	
 	
 	@AfterClass
 	public void teardown() {
-		//driver.close();
+		driver.close();
 	}
 }
